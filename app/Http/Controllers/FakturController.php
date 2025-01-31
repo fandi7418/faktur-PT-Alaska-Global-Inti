@@ -58,7 +58,7 @@ class FakturController extends Controller
         return redirect()->route('fakturs.edit')->with(['success' => 'Data Berhasil Disimpan!']);
     }
 
-    //belum selesai
+    //belum selesai wawwwwww
     public function edit($id)
     {
         $faktur = Faktur::with(['customer', 'detail', 'detail.product'])->find($id);
